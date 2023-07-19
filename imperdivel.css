@@ -1,0 +1,307 @@
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact; 
+}
+
+h1 {
+    font-size: 1.2em;
+}
+
+
+.principal-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    height: 100vh;
+    width: 100%;
+    gap: 200px;
+    padding-top: 140px;
+    position: relative;
+}
+
+
+.voltar {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    padding: 10px;
+    background-color: aliceblue;
+    border: solid 2px black;
+    text-decoration: none;
+    color: black;
+}
+
+.voltar:hover {
+    background-color: rgb(26, 26, 26);
+    transition: 0.3s;
+    color: white;
+}
+
+
+.data-input {
+    padding: 10px;
+}
+
+.data-input input {
+    padding-left: 10px;
+    font-size: 1.2em;
+    height: 30px;
+}
+
+.button {
+    margin: 10px;
+    padding: 8px;
+    font-weight: bolder;
+    background-color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+
+.mini-preview-container {
+    background-color: rgb(255, 255, 255);
+    border: solid 1px black;
+    display: block;
+    display: none;
+    height: 390px;
+    width: 275px;
+    position: relative;
+    
+}
+
+.mini-preview-container h1 {
+    font-family: "Anton", sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 1,5em;
+    padding: 10px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+#imperdivel-mini {
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+
+.flex-nome-mini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 70px;
+    margin: 10px auto;
+}
+
+#nome-mini {
+    font-size: 2em;
+    max-height: 70px;
+    max-width: 250px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.de-container-mini, .por-container-mini {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 250px;
+}
+
+.de-container-mini {
+    height: 50px;
+    max-height: 100%;
+}
+
+.por-container-mini {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    max-height: max-content;
+}
+
+#de-mini, #por-mini {
+    font-size: 1em;
+}
+
+#de-mini {
+    margin-right: 3em;
+}
+
+
+
+#de-preco-mini {
+    font-size: 1.5em;
+    text-decoration: line-through;
+    padding: 0px;
+}
+
+.flex-preco-mini {
+    display: flex;
+    align-items: last baseline;
+    gap: 6px;
+}
+
+.flex-preco-mini span {
+    font-family: "Anton", sans-serif;
+    font-size: 1em;
+}
+
+#por-preco-mini {
+    font-size: 4em;
+    padding: 0px;
+}
+
+.footer-info-mini {
+    font-family: "Anton", sans-serif;
+    margin: 10px auto;
+    font-size: 0.5em;
+    max-width: 250px;
+    position: absolute;
+    bottom: 10px;
+    left: 54px;
+}
+
+.footer-info-mini p {
+    text-align: center;
+}
+
+/* -------------------- */
+
+.preview-container {
+    display: block;
+    height: 1560px;
+    width: 1100px;
+    background-color: white;
+    position: relative;
+    display: none;
+}
+
+.preview-container h1 {
+    font-family: "Anton", sans-serif;
+    letter-spacing: 2px;
+    font-size: 6em;
+    padding: 40px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+
+
+#imperdivel {
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+
+.flex-nome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 280px;
+    margin: 40px auto;
+}
+
+#nome {
+    font-size: 8em;
+    max-height: 280px;
+    max-width: 1000px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.de-container, .por-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.de-container {
+    height: 200px;
+    max-height: 100%;
+}
+
+.por-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    max-height: 100%;
+}
+
+#de, #por {
+    font-size: 4em;
+}
+
+#de {
+    margin-right: 3em;
+}
+
+#por {
+    margin-right: 1em;
+}
+
+#de-preco {
+    font-size: 6em;
+    text-decoration: line-through;
+    padding: 0px;
+}
+
+#por-preco {
+    font-size: 16em;
+    padding: 0px;
+}
+
+.flex-preco {
+    display: flex;
+    align-items: last baseline;
+    gap: 24px;
+}
+
+.flex-preco span {
+    font-family: "Anton", sans-serif;
+    font-size: 4em;
+}
+
+.footer-info {
+    font-family: "Anton", sans-serif;
+    margin: 40px auto;
+    font-size: 2em;
+    max-width: 1000px;
+    position: absolute;
+    bottom: 40px;
+    left: 212px;
+}
+
+.footer-info p {
+    text-align: center;
+}
+/*
+@media print {
+
+    body *:not(.preview-container):not(.preview-container *) {
+        visibility: hidden;
+    }
+
+    .preview-container {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+

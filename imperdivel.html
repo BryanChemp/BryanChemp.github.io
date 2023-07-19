@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="imperdivel.css">
+    <link rel="stylesheet" href="imperdivel2x1.css">
+    <title>Papeleta Automática</title>
+</head>
+<body>
+    <div class="principal-container">
+        <a href="menu.html" class="voltar"> VOLTAR </a>
+        <div class="data-input-container">
+            <div class="data-input">
+                <h1> Nome do produto: </h1>
+                <input type="text" id="nome-input">
+            </div>
+            <div class="data-input">
+                <h1> De: </h1>
+                <input type="text" id="de-input">
+            </div>
+            <div class="data-input">
+                <h1> Por: </h1>
+                <input type="text" id="por-input">
+            </div>
+
+            <button onclick="gerarPapeleta()" class="button"> Gerar Papeleta </button>
+        </div>
+        <div class="mini-preview-container">
+            <div> <h1 id="imperdivel-mini"> IMPERDÍVEL </h1> </div>
+
+            <div class="flex-nome-mini"> <h1 id="nome-mini"> . </h1> </div>
+            <div class="de-container-mini"> <div> <h1 id="de-mini">DE:</h1> </div> <div> <h1 id="de-preco-mini">00,00</h1> </div> </div>
+            <div class="por-container-mini"> <div> <h1 id="por-mini">POR APENAS:</h1> </div> <div class="flex-preco-mini"> <span>R$</span> <h1 id="por-preco-mini">00,00</h1> </div> </div>
+            <div class="footer-info-mini"> <p> OFERTA VÁLIDA MEDIANTE DISPONIBILIDADE DO ESTOQUE </p> </div>
+        </div>
+
+        <div class="container-mini-preview-2x1">
+            <div class="item-2x1">
+            <div> <h1 id="imperdivel-mini-2x1"> IMPERDÍVEL </h1> </div>
+
+            <div class="flex-nome-mini-2x1"> <h1 id="nome-mini-2x1"> . </h1> </div>
+            <div class="de-container-mini-2x1"> <div> <h1 id="de-mini-2x1">DE:</h1> </div> <div> <h1 id="de-preco-mini-2x1">00,00</h1> </div> </div>
+            <div class="por-container-mini-2x1"> <div> <h1 id="por-mini-2x1">POR APENAS:</h1> </div> <div class="flex-preco-mini-2x1"> <span>R$</span> <h1 id="por-preco-mini-2x1">00,00</h1> </div> </div>
+            <div class="footer-info-mini-2x1"> <p> OFERTA VÁLIDA MEDIANTE DISPONIBILIDADE DO ESTOQUE </p> </div>
+            </div>
+
+            <div class="item-2x1">
+            <div> <h1 id="imperdivel-mini-2x1"> IMPERDÍVEL </h1> </div>
+
+            <div class="flex-nome-mini-2x1"> <h1 id="nome-mini-2x12"> . </h1> </div>
+            <div class="de-container-mini-2x1"> <div> <h1 id="de-mini-2x1">DE:</h1> </div> <div> <h1 id="de-preco-mini-2x12">00,00</h1> </div> </div>
+            <div class="por-container-mini-2x1"> <div> <h1 id="por-mini-2x1">POR APENAS:</h1> </div> <div class="flex-preco-mini-2x1"> <span>R$</span> <h1 id="por-preco-mini-2x12">00,00</h1> </div> </div>
+            <div class="footer-info-mini-2x1"> <p> OFERTA VÁLIDA MEDIANTE DISPONIBILIDADE DO ESTOQUE </p> </div>
+            </div>
+                
+            
+        </div>
+    </div>
+    <div class="preview-container">
+        <div> <h1 id="imperdivel">IMPERDÍVEL</h1> </div>
+
+        <div class="flex-nome"> <h1 id="nome">.</h1> </div>
+        <div class="de-container"> <div> <h1 id="de">DE:</h1> </div> <div> <h1 id="de-preco">00,00</h1> </div> </div>
+        <div class="por-container"> <div> <h1 id="por">POR APENAS:</h1> </div> <div class="flex-preco"> <span> R$ </span> <h1 id="por-preco">00,00</h1> </div> </div>
+        <div class="footer-info"> <p> OFERTA VÁLIDA MEDIANTE DISPONIBILIDADE DO ESTOQUE </p> </div>
+    </div>
+
+    <div class="preview-container-2x1" >
+        <div class="container-preview-2x1" id="previewg2x1">
+            <div class="item-g2x1">
+            <div> <h1 id="imperdivel-2x1"> IMPERDÍVEL </h1> </div>
+
+            <div class="flex-nome-2x1"> <h1 id="nome-2x1"> . </h1> </div>
+            <div class="de-container-2x1"> <div> <h1 id="de-2x1">DE:</h1> </div> <div> <h1 id="de-preco-2x1">00,00</h1> </div> </div>
+            <div class="por-container-2x1"> <div> <h1 id="por-2x1">POR APENAS:</h1> </div> <div class="flex-preco-2x1"> <span>R$</span> <h1 id="por-preco-2x1">00,00</h1> </div> </div>
+            <div class="footer-info-2x1"> <p> OFERTA VÁLIDA MEDIANTE DISPONIBILIDADE DO ESTOQUE </p> </div>
+            </div>
+
+            <div class="item-g2x1">
+            <div> <h1 id="imperdivel-2x1"> IMPERDÍVEL </h1> </div>
+
+            <div class="flex-nome-2x1"> <h1 id="nome-2x12"> . </h1> </div>
+            <div class="de-container-2x1"> <div> <h1 id="de-2x1">DE:</h1> </div> <div> <h1 id="de-preco-2x12">00,00</h1> </div> </div>
+            <div class="por-container-2x1"> <div> <h1 id="por-2x1">POR APENAS:</h1> </div> <div class="flex-preco-2x1"> <span>R$</span> <h1 id="por-preco-2x12">00,00</h1> </div> </div>
+            <div class="footer-info-2x1"> <p> OFERTA VÁLIDA MEDIANTE DISPONIBILIDADE DO ESTOQUE </p> </div>
+            </div>    
+        </div>
+    </div>
+
+    <h1 id="printingVerify"> </h1>
+    <script src="imperdivel.js"></script>
+    <script src="imperdivel2x1.js"></script>
+</body>
+</html>
